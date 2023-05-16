@@ -1,0 +1,10 @@
+:root{
+  --fonte-principal: 'Inter Tight', sans-serif;
+  --fonte-secundaria: 'Inter', sans-serif;
+
+  --size-titulos-grandes: 1.75rem;
+  --size-titulo: 1.5rem;
+  --size-texto-grande: 1.25rem;
+  --size-texto: 1rem;
+  --size-texto-pequeno: 0.875rem;
+}

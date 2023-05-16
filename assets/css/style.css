@@ -1,19 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @import url(./frameworks/bootstrap.css);
 @import url(./frameworks/bootstrap-icons.css);
 
 @import url(./normalize.css);
 @import url(./reset.css);
 
-@import url(./elementos/no-script.css);
 @import url(./cores.css);
 @import url(./variaveis.css);
 
+@import url(./elementos/no-script.css);
+@import url(./elementos/spinners.css);
+
+@import url(./componentes/header.css);
+@import url(./componentes/main.css);
+
 html{
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden */
 }
 
 body{
-  font-family: '', sans-serif;
+  font-family: var(--fonte-principal);
+  background: linear-gradient(108.26deg, #161683 0%, #1E2B9E 1000vh);
+  position: relative;
+  color: #FFF;
 }
 
 .none{
