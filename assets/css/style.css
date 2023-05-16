@@ -15,6 +15,12 @@
 
 @import url(./componentes/header.css);
 @import url(./componentes/main.css);
+@import url(./componentes/info-group.css);
+@import url(./componentes/card-course.css);
+@import url(./componentes/card-formation.css);
+@import url(./componentes/access-data.css);
+@import url(./componentes/progress-data.css);
+@import url(./componentes/footer.css);
 
 html{
   scroll-behavior: smooth;
