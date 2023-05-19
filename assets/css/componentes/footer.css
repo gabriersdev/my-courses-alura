@@ -12,3 +12,27 @@
 .footer.container{
   padding: 0;
 }
+
+.footer .col-6 h5{
+  margin-bottom: 0.75rem !important;
+}
+
+@media screen and (max-width: 767px) {
+  .footer .col-6{
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .footer .row{
+    display: block;
+  }
+
+  .footer .col-6.col-md{
+    width: 100%;
+  }
+
+  .footer .col-6 h5{
+    margin-top: 0.75rem;
+  }
+}
