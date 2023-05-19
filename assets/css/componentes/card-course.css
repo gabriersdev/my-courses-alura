@@ -1,27 +1,57 @@
 .card-course{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  backdrop-filter: blur(12.5px);
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(135deg, rgba(255, 255, 255, 0.125) 0%, rgba(255, 255, 255, 0.5) 100%); 
+  border-radius: 10px;
+  padding: 1rem;
 
+  display: flex;
+  align-items: initial;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .card-course-header{
-
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
 }
 
 .card-course-header-tag{
-
+  background: url(../../icon/mark-line.svg) center / contain no-repeat;
+  width: 15px;
+  height: 15px;
 }
 
 .card-course-header-progress{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background:
+    radial-gradient(closest-side, #303296 70%, transparent 40% 100%),
+    conic-gradient( rgba(255, 255, 255, 0.4) var(--s), #FFF 0);  
+}
 
+.card-course-header-progress progress{
+  display: none;
 }
 
 .card-course-body{
-
+  display: initial;
 }
 
 .card-course-body-title{
-
+  margin-bottom: 1.5rem;
+  font-size: var(--size-titulos-grandes);
+  font-weight: 600 !important;
+  width: min(330px, 100%);
 }
 
 .card-course-body-footer{
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

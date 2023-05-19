@@ -121,7 +121,9 @@
           <div class="card-course">
             <div class="card-course-header">
               <span class="card-course-header-tag"></span>
-              <span class="card-course-header-progress"></span>
+              <div class="card-course-header-progress" style="--s: 15%">
+                <progress value="75" min="0" max="100"></progress>
+              </div>
             </div>
             <div class="card-course-body">
               <h3 class="card-course-body-title">Curso de análise de dados com SeaBorn</h3>
@@ -154,8 +156,11 @@
             </div>
             <div class="card-formation-body">
               <h3 class="card-formation-body-title">Lógica de programação</h3>
-              <span class="card-formation-body-courses-finished">
-                <b>6 cursos</b>concluídos
+              <span class="card-formation-body-courses-finished" style="--c: rgba(87, 196, 120, 0.7)">
+                <div>
+                  <span></span>
+                  <b>6 cursos</b>concluídos
+                </div>
               </span>
               <div class="card-formation-body-footer">
                 <div class="access-data">
@@ -175,7 +180,7 @@
   </main>
   
   <div class="footer container"> 
-    <footer class="pt-4 border-top"> 
+    <footer> 
       <div class="row"> 
         <div class="col-12 col-md"> 
           <small class="d-block">Desenvolvido por</small> 

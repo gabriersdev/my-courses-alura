@@ -1,11 +1,15 @@
 .progress-data{
+  display: inline-block;
+  text-align: right;
+  line-height: 1.15;
+}
 
+.progress-data-label{
+  display: block;
+  color: var(--branco-70);
 }
 
 .progress-data-info{
-
-}
-
-progress-data-label{
-  
+  display: block;
+  font-weight: 600;
 }

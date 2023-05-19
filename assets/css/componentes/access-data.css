@@ -1,11 +1,15 @@
 .access-data{
-
+  display: inline-block;
+  text-align: left;
+  line-height: 1.15;
 }
 
 .access-data-label{
-
+  display: block;
+  color: var(--branco-70);
 }
 
 .access-data-info{
-
+  display: block;
+  font-weight: 600;
 }
