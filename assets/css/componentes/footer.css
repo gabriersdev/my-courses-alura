@@ -27,6 +27,8 @@
 
 .footer .col-6 h5{
   margin-bottom: 0.75rem !important;
+  font-size: 1.25rem !important;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 767px) {
