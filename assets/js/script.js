@@ -1,5 +1,8 @@
 "use strict";
 
+import { Cards } from "./modulos/cards.js";
+import { hexToRgbA, isEmpty } from "./modulos/utilitarios.js";
+
 (() => {
   hljs.highlightAll();
   
@@ -68,3 +71,40 @@
   atribuirLinks();
   
 })();
+
+async function conexao(){
+  const url = `https://www.alura.com.br/api/dashboard/d217e36b4071d6c4d6e6e97c4ced902a48332f60a59705954cc11c570724ba78`;
+  return await fetch(url)
+  .then((response) => 
+  response.json()
+  )
+  .then((retorno) => 
+  retorno
+  )
+  .catch((error) => 
+  error
+  )
+}
+
+conexao().then(retorno => {
+  //Caso existam dados tanto para os cursos sendo realizados e as formações
+  if(!isEmpty(retorno.courseProgresses) && !isEmpty(retorno.guides)){
+    const dados = Array.of(retorno.courseProgresses, ...retorno.guides)
+    console.log(dados)
+    
+  }
+  else{
+    //Caso não existam dados para os cursos em realização
+    if(isEmpty(retorno.courseProgresses)){
+      
+    }
+    //Caso não existam dados para as formações
+    if(isEmpty(retorno.guides)){
+
+    }
+  } 
+  
+});
+
+const card = new Cards('course', 'Titulo', null, {percentage: 75}, {last_access: '1665571366000'});
+// console.log(card.createCard())

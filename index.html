@@ -69,27 +69,6 @@
     </div>
   </noscript>
   
-  <script>
-    async function conexao(){
-      const url = `https://www.alura.com.br/api/dashboard/d217e36b4071d6c4d6e6e97c4ced902a48332f60a59705954cc11c570724ba78`;
-      return await fetch(url)
-      .then((response) => 
-      response.json()
-      )
-      .then((retorno) => 
-      retorno
-      )
-      .catch((error) => 
-      error
-      )
-    }
-    
-    conexao().then(retorno => {
-      const dados = Array.of(retorno.courseProgresses, ...retorno.guides)
-      console.log(dados)
-    });
-  </script>
-  
   <!-- <main class="main loading">
     <div class="spinner"></div>
   </main> -->
@@ -166,7 +145,7 @@
             <div class="card-empty-content">
               <span class="card-empty-content-image"></span>
               <h3 class="card-empty-content-title">Nada aqui por enquanto...</h3>
-              <button class="button-refresh-query-api">carregar dados&nbsp;<span class="button-refresh-query-api-icon"></span></button>
+              <button class="button-refresh-query-api" data-action="refresh-query-api">carregar dados&nbsp;<span class="button-refresh-query-api-icon"></span></button>
             </div>
           </div>
         </div>
@@ -232,7 +211,7 @@
             <div class="card-empty-content">
               <span class="card-empty-content-image"></span>
               <h3 class="card-empty-content-title">Nada aqui por enquanto...</h3>
-              <button class="button-refresh-query-api">carregar dados&nbsp;<span class="button-refresh-query-api-icon"></span></button>
+              <button class="button-refresh-query-api" data-action="refresh-query-api">carregar dados&nbsp;<span class="button-refresh-query-api-icon"></span></button>
             </div>
           </div>
         </div>
