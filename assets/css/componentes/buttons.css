@@ -52,3 +52,10 @@ a.action:is(:focus, :focus-visible, :hover, :active, :checked){
 .action span.open-in-new{
   background: url(../../icon/open-in-new.svg) center / contain no-repeat;
 }
+
+@media screen and (max-width: 550px) {
+  .action{
+    margin-top: 1rem;
+    margin-left: -0.5rem;
+  }
+}

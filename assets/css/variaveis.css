@@ -8,3 +8,13 @@
   --size-texto: 1rem;
   --size-texto-pequeno: 0.875rem;
 }
+
+@media screen and (max-width: 767px) {
+  :root{
+    --size-titulos-grandes: 1.25rem;
+    --size-titulo: 1.25rem;
+    --size-texto-grande: 1.1rem;
+    --size-texto: 1rem;
+    --size-texto-pequeno: 0.875rem;
+  }
+}
