@@ -17,6 +17,7 @@
 @import url(./componentes/main.css);
 @import url(./componentes/info-group.css);
 @import url(./componentes/card-course.css);
+@import url(./componentes/card-empty.css);
 @import url(./componentes/card-formation.css);
 @import url(./componentes/access-data.css);
 @import url(./componentes/progress-data.css);
@@ -41,6 +42,32 @@ body{
 
 .block{
   display: block;
+}
+
+.button-refresh-query-api{
+  text-transform: lowercase;
+  color: inherit;
+  font-size: var(--size-texto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+}
+
+.button-refresh-query-api:is(:hover, :focus, :active){
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.button-refresh-query-api-icon{
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background: url(../../assets/icon/refresh.svg) center / contain no-repeat;
 }
 
 @media screen and (max-width: 575px) {

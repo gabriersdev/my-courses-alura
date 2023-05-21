@@ -1,0 +1,25 @@
+.card-course.card-empty,
+.card-formation.card-empty{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-empty-content{
+  display: initial;
+}
+
+.card-empty-content-image{
+  width: 25px;
+  height: 25px;
+  background: url(../../icon/empty.svg) center / contain no-repeat;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.card-empty-content-title{
+  margin-bottom: 0.75rem;
+  font-size: var(--size-titulos-grandes);
+  font-weight: 600 !important;
+  width: min(330px, 100%);
+}
