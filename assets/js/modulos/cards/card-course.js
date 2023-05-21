@@ -8,7 +8,7 @@ export class CardCourse{
       <div class="card-course">
         <div class="card-course-header">
           <span class="card-course-header-tag"></span>
-          <div class="card-course-header-progress" style="--s: ${100 - Math.abs(progress.percentage)}%">
+          <div class="card-course-header-progress" style="--s: ${100 - Math.abs(progress.percentage)}%" data-toggle="tooltip" data-placement="bottom" data-bs-custom-class="custom-tooltip" title="Progresso">
             <progress value="${Math.abs(progress.percentage)}" min="0" max="100"></progress>
           </div>
         </div>

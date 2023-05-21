@@ -4,7 +4,14 @@
   border-top-width: 1px;
   border-top-style: solid;
   border-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%) 1;
-  font-family: 'Inter', sans-serif;
+}
+
+.footer ul li,
+.footer span,
+.footer p,
+.footer a,
+.footer h5{
+  font-family: 'Inter', sans-serif !important
 }
 
 .footer small, li{

@@ -14,8 +14,10 @@ export class CardEmpty{
   render(){
     switch(this.#type){
       case 'courses':
+        return generateCard('course');
+      break;
       case 'formations':
-        return generateCard(this.#type);
+        return generateCard('formation');
       break;
 
       default:

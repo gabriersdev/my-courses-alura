@@ -27,8 +27,11 @@ html{
   /* overflow-y: hidden */
 }
 
-body{
+*{
   font-family: var(--fonte-principal);
+}
+
+body{
   background: linear-gradient(108.26deg, #161683 0%, #1E2B9E 1000vh);
   position: relative;
   color: #FFF;

@@ -8,10 +8,10 @@ export class CardFormation{
       <div class="card-formation">
         <div class="card-formation-header">
           <span class="card-formation-header-tag"></span>
-          <span class="card-formation-header-progress">${Math.abs(progress.finishedSteps)}/${Math.abs(progress.totalSteps)}</span>
+          <span class="card-formation-header-progress" data-toggle="tooltip" data-placement="bottom" data-bs-custom-class="custom-tooltip" title="Progresso">${Math.abs(progress.finishedSteps)}/${Math.abs(progress.totalSteps)}</span>
         </div>
         <div class="card-formation-body">
-          <h3 class="card-formation-body-title">Lógica de programação</h3>
+          <h3 class="card-formation-body-title">${title.length >= 75? title.substr(0, 75) + '...' : title}</h3>
           <span class="card-formation-body-courses-finished" style="--c: ${hexToRgbA(description.color)}">
             <div>
               <span></span>
@@ -40,7 +40,7 @@ export class CardFormation{
   }
 
   personalizeCoursesCompletes(finishedCourses){
-    const ret = null;
+    let ret = null;
     if(finishedCourses <= 0){
       ret = `<b>nenhum curso</b>concluído`;
     }else if(finishedCourses == 1){
