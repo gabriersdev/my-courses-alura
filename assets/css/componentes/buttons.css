@@ -11,6 +11,8 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   padding: 0.5rem 0.75rem;
+
+  transition: background ease-in-out 0.2s;
 }
 
 .button-refresh-query-api:is(:hover, :focus, :active){
