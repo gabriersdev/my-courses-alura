@@ -4,7 +4,6 @@ import { Cards } from "./modulos/cards.js";
 import { hexToRgbA, isEmpty } from "./modulos/utilitarios.js";
 
 (() => {
-  hljs.highlightAll();
   
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
