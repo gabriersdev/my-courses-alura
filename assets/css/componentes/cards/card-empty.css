@@ -1,7 +1,7 @@
 .card-course.card-empty,
 .card-formation.card-empty{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 

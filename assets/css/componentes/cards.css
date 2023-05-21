@@ -4,6 +4,28 @@
 @import url(./cards/card-formation.css);
 
 /* Models */
+.card-course,
+.card-formation{
+  display: flex;
+  align-items: initial;
+  justify-content: space-between;
+  flex-direction: column;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  backdrop-filter: blur(12.5px);
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(135deg, rgba(255, 255, 255, 0.125) 0%, rgba(255, 255, 255, 0.5) 100%); 
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.card-course-header,
+.card-formation-header{
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
+}
 
 .card-formation-body-title,
 .card-course-body-title,
