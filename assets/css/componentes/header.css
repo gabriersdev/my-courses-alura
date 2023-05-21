@@ -43,28 +43,3 @@
 .hgroup-secondary{
   color: var(--branco-70);
 }
-
-.action,
-.action:is(:focus, :focus-visible, :hover, :active, :checked){
-  border: unset;
-  background-color: initial;
-  color: inherit;
-  font-size: var(--size-texto-grande);
-  display: flex;
-  align-items: center;
-}
-
-a.action:is(:focus, :focus-visible, :hover, :active, :checked){
-  text-decoration: underline;
-}
-
-.action span{
-  height: var(--size-texto-grande);
-  width: var(--size-texto-grande);
-  display: inline-block;
-  margin-left: 0.25rem;
-}
-
-.action span.open-in-new{
-  background: url(../../icon/open-in-new.svg) center / contain no-repeat;
-}

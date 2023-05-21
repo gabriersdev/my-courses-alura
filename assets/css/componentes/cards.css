@@ -1,0 +1,15 @@
+@import url(./cards/card-course.css);
+@import url(./cards/card-empty.css);
+@import url(./cards/card-placeholder.css);
+@import url(./cards/card-formation.css);
+
+/* Models */
+
+.card-formation-body-title,
+.card-course-body-title,
+.card-empty-content-title{
+  margin-bottom: 0.75rem;
+  font-size: var(--size-titulos-grandes);
+  font-weight: 600 !important;
+  width: min(330px, 100%);
+}

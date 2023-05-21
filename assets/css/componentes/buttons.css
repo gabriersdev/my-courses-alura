@@ -1,0 +1,52 @@
+/* Button REFRESH */
+.button-refresh-query-api{
+  text-transform: lowercase;
+  color: inherit;
+  font-size: var(--size-texto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+}
+
+.button-refresh-query-api:is(:hover, :focus, :active){
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.button-refresh-query-api-icon{
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background: url(../../../assets/icon/refresh.svg) center / contain no-repeat;
+}
+
+/* Button ACTION */
+.action,
+.action:is(:focus, :focus-visible, :hover, :active, :checked){
+  border: unset;
+  background-color: initial;
+  color: inherit;
+  font-size: var(--size-texto-grande);
+  display: flex;
+  align-items: center;
+}
+
+a.action:is(:focus, :focus-visible, :hover, :active, :checked){
+  text-decoration: underline;
+}
+
+.action span{
+  height: var(--size-texto-grande);
+  width: var(--size-texto-grande);
+  display: inline-block;
+  margin-left: 0.25rem;
+}
+
+.action span.open-in-new{
+  background: url(../../icon/open-in-new.svg) center / contain no-repeat;
+}
