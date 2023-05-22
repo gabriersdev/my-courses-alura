@@ -144,6 +144,8 @@ function atribuirLinks(){
       link.href = 'https://linkedin.com/in/gabrielribeirodev/';
       break;  
     }
+
+    link.setAttribute('rel', 'noreferrer noopener');
   })
 }
 

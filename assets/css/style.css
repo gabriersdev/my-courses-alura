@@ -34,6 +34,26 @@ html.block-scroll{
   font-family: var(--fonte-principal);
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #FFF #1C2597;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 20px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1C2597;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #FFF;
+  border-radius: 100px;
+  border: 9px solid #1C2597;
+}
+
 body{
   background: linear-gradient(108.26deg, #161683 0%, #1E2B9E 1000vh);
   position: relative;
