@@ -23,5 +23,4 @@ O projeto é o consumo da API da Alura, com os cursos e as formações que estou
 - Bootstrap Icons
 - Figma
 - VS Code
-
 - Fontes usadas: Inter, Inter Tight e Product Sans
