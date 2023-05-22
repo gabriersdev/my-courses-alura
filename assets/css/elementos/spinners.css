@@ -5,10 +5,10 @@
   border: 6px solid;
   border-color: rgba(217, 217, 217, 0.25);;
   border-right-color: #fefefe;
-  animation: spinner-d3wgkg 1s infinite linear;
+  animation: spinner-anima 1s infinite linear;
 }
 
-@keyframes spinner-d3wgkg {
+@keyframes spinner-anima {
   to {
     transform: rotate(1turn);
   }

@@ -23,8 +23,11 @@
 
 html{
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */
-  /* overflow-y: hidden */
+}
+
+html.block-scroll{
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 *{

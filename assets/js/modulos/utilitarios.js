@@ -51,11 +51,11 @@ function sanitizarString(string){
         subst: ''
       },
     ]
-
+    
     substituir.forEach(substituicao => {
       string = string.replace(substituicao.original, substituicao.subst)
     })
-
+    
     return string.trim();
   }else{
     console.log('O tipo do parâmetro passado não é uma string.');
@@ -65,7 +65,7 @@ function sanitizarString(string){
 
 const converterParaMesBRL = (numero) => {
   let mes = null;
-
+  
   switch (numero + 1){
     case 1: mes = 'janeiro'; break;
     case 2: mes = 'fevereiro'; break;
@@ -81,7 +81,7 @@ const converterParaMesBRL = (numero) => {
     case 12: mes = 'dezembro'; break;
     default: mes = 'janeiro'; break;
   }
-
+  
   return mes;
 }
 
@@ -89,14 +89,62 @@ function hexToRgbA(hex){
   //Credit: https://stackoverflow.com/questions/21646738/
   var c;
   if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
-      c= hex.substring(1).split('');
-      if(c.length== 3){
-          c= [c[0], c[0], c[1], c[1], c[2], c[2]];
-      }
-      c= '0x'+c.join('');
-      return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',0.6)';
+    c= hex.substring(1).split('');
+    if(c.length== 3){
+      c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+    }
+    c= '0x'+c.join('');
+    return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',0.6)';
   }
   throw new Error('Bad Hex');
+}
+
+function atribuirLinks(){
+  const linkElementos = document.querySelectorAll('[data-link]');
+  
+  linkElementos.forEach(link => {
+    switch(link.dataset.link.toLowerCase().trim()){
+      case 'my-profile':
+      link.href = 'https://cursos.alura.com.br/user/devgabrielribeiro';
+      break;
+      
+      case 'profile-one':
+      link.href = 'https://cursos.alura.com.br/emprega-one/profile/devgabrielribeiro';
+      break;
+      
+      case 'expresso-mobilidade':
+      link.href = 'https://exp.epizy.com/';
+      break;
+      
+      case 'music-ui':
+      link.href = 'https://gabrieszin.github.io/music.ui/';
+      break;
+      
+      case 'confirmacao-cca':
+      link.href = 'https://gabrieszin.github.io/confirmacao-cca/';
+      break;
+      
+      case 'birthday-message':
+      link.href = 'https://gabrieszin.github.io/birthday-message/';
+      break;
+      
+      case 'github-dev':
+      link.href = 'https://github.com/gabrieszin/';
+      break;
+      
+      case 'github-projeto':
+      link.href = 'https://github.com/gabrieszin/my-courses-alura';
+      break;
+      
+      case 'portfolio':
+      link.href = 'https://gabrieszin.github.io/portfolio/';
+      break;  
+      
+      case 'linkedin':
+      link.href = 'https://linkedin.com/in/gabrielribeirodev/';
+      break;  
+    }
+  })
 }
 
 export{
@@ -106,5 +154,6 @@ export{
   controleFechamentoModal,
   sanitizarString,
   converterParaMesBRL,
-  hexToRgbA
+  hexToRgbA,
+  atribuirLinks
 }
