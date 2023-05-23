@@ -1,3 +1,18 @@
 :root{
+  --branco: #FFF;
   --branco-70: rgba(255, 255, 255, 0.7);
+  --branco-50: rgba(255, 255, 255, 0.5);
+  --branco-40: rgba(255, 255, 255, 0.4);
+  --branco-20: rgba(255, 255, 255, 0.2);
+  --branco-125: rgba(255, 255, 255, 0.125);
+  --branco-10: rgba(255, 255, 255, 0.1);
+  --branco-05: rgba(255, 255, 255, 0.05);
+  --branco-0: rgba(255, 255, 255, 0);
+
+  --branco-medio: #FEFEFE;
+  --branco-medio-25: rgba(217, 217, 217, 0.25);
+
+  --roxo: #303296;
+  --azul-escuro: #161683;
+  --azul-naval: #1E2B9E;
 }

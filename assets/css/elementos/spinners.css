@@ -3,8 +3,8 @@
   height: 40px;
   border-radius: 50%;
   border: 6px solid;
-  border-color: rgba(217, 217, 217, 0.25);;
-  border-right-color: #fefefe;
+  border-color: var(--branco-medio-25);
+  border-right-color: var(--branco-medio);
   animation: spinner-anima 1s infinite linear;
 }
 

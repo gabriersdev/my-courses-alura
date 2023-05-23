@@ -15,7 +15,7 @@
 }
 
 .info-group-header-title{
-  color: #FFF;
+  color: var(--branco);
   font-size: var(--size-titulos-grandes) !important;
   text-transform: lowercase;
   font-weight: 700;
@@ -25,7 +25,7 @@
 .info-group-header-line{
   display: inline;
   height: 1px;
-  border-top: 1px dashed #FFF !important;
+  border-top: 1px dashed var(--branco) !important;
   flex-grow: 1;
 }
 

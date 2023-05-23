@@ -7,7 +7,7 @@
   position: fixed;
   top: 0;
   z-index: 1;
-  background: #1E2B9E;
+  background: var(--azul-naval);
   display: flex;
   align-content: center;
   align-items: center;

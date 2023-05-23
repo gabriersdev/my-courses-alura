@@ -31,12 +31,13 @@ html.block-scroll{
 }
 
 *{
+  font-family: sans-serif;
   font-family: var(--fonte-principal);
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: #FFF #161683;
+  scrollbar-color: var(--branco) var(--azul-escuro);
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -45,19 +46,19 @@ html.block-scroll{
 }
 
 *::-webkit-scrollbar-track {
-  background: #161683;
+  background: var(--azul-escuro);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #FFF;
+  background-color: var(--branco);
   border-radius: 100px;
-  border: 9px solid #161683;
+  border: 9px solid var(--azul-escuro);
 }
 
 body{
-  background: linear-gradient(108.26deg, #161683 0%, #1E2B9E 1000vh);
+  background: linear-gradient(108.26deg, var(--azul-escuro) 10%, var(--azul-naval) 1000vh);
   position: relative;
-  color: #FFF;
+  color: var(--branco);
 }
 
 .none{

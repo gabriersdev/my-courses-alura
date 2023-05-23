@@ -17,8 +17,8 @@
   height: 16px;
   border-radius: 50%;
   background:
-    radial-gradient(closest-side, #303296 70%, transparent 40% 100%),
-    conic-gradient( rgba(255, 255, 255, 0.4) var(--s), #FFF 0);  
+    radial-gradient(closest-side, var(--roxo) 70%, transparent 40% 100%),
+    conic-gradient( var(--branco-40) var(--s), var(--branco) 0);  
 }
 
 .card-course-header-progress progress{

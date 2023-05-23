@@ -3,7 +3,7 @@
 .footer{
   border-top-width: 1px;
   border-top-style: solid;
-  border-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%) 1;
+  border-image: linear-gradient(90deg, var(--branco-50) 0%, var(--branco-10) 100%) 1;
 }
 
 .footer ul li,
