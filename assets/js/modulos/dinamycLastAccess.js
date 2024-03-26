@@ -29,12 +29,12 @@ export class DinamycLastAccess{
       
       default:
       // Diferença em meses entre a hora atual e o timestamp inforamdo
-      const diff_month = moment().diff([date_moment.get('year') -1 , date_moment.get('month'), date_moment.get('date')], 'month');
+      const diff_month = moment().diff([date_moment.get('year'), date_moment.get('month'), date_moment.get('date')], 'month');
 
       if(diff_month < 11){
         ret = `${date_moment.get('date')} de ${converterParaMesBRL(date_moment.get('month')).substr(0, 3)}`;
       }else{
-        ret = `${date_moment.format('DD MMMM YYYY')}`;
+        ret = `${date_moment.format('DD') + ' ' + converterParaMesBRL(date_moment.get('month')).substr(0, 3) + ' ' + date_moment.format('YYYY')}`;
       }
       break;
     }
