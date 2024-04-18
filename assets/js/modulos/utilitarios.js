@@ -112,8 +112,8 @@ function atribuirLinks(){
       link.href = 'https://cursos.alura.com.br/emprega-one/profile/devgabrielribeiro';
       break;
       
-      case 'expresso-mobilidade':
-      link.href = 'https://exp.epizy.com/';
+      case 'home-conversor':
+      link.href = 'https://gabrieszin.github.io/home-page-Conversor/';
       break;
       
       case 'music-ui':
@@ -121,7 +121,7 @@ function atribuirLinks(){
       break;
       
       case 'confirmacao-cca':
-      link.href = 'https://gabrieszin.github.io/confirmacao-cca/';
+      link.href = 'https://gabrieszin.github.io/cca/';
       break;
       
       case 'birthday-message':
