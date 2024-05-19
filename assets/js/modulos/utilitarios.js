@@ -113,31 +113,31 @@ function atribuirLinks(){
       break;
       
       case 'home-conversor':
-      link.href = 'https://gabrieszin.github.io/home-page-Conversor/';
+      link.href = 'https://gabriersdev.github.io/home-page-Conversor/';
       break;
       
       case 'music-ui':
-      link.href = 'https://gabrieszin.github.io/music.ui/';
+      link.href = 'https://gabriersdev.github.io/music.ui/';
       break;
       
       case 'confirmacao-cca':
-      link.href = 'https://gabrieszin.github.io/cca/';
+      link.href = 'https://gabriersdev.github.io/cca/';
       break;
       
       case 'birthday-message':
-      link.href = 'https://gabrieszin.github.io/birthday-message/';
+      link.href = 'https://gabriersdev.github.io/birthday-message/';
       break;
       
       case 'github-dev':
-      link.href = 'https://github.com/gabrieszin/';
+      link.href = 'https://github.com/gabriersdev/';
       break;
       
       case 'github-projeto':
-      link.href = 'https://github.com/gabrieszin/my-courses-alura';
+      link.href = 'https://github.com/gabriersdev/my-courses-alura';
       break;
       
       case 'portfolio':
-      link.href = 'https://gabrieszin.github.io/portfolio/';
+      link.href = 'https://gabriersdev.github.io/portfolio/';
       break;  
       
       case 'linkedin':
