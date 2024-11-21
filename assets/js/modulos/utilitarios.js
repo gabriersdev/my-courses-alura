@@ -19,7 +19,7 @@ const atualizarDatas = () => {
   document.querySelectorAll("[data-ano-atual]").forEach(area => {
     area.textContent = `${dataAtual.getFullYear()}`;
   })
-} 
+}
 
 const controleFechamentoModal = () => {
   const modais = document.querySelectorAll('.modal');
@@ -51,11 +51,11 @@ function sanitizarString(string){
         subst: ''
       },
     ]
-    
+
     substituir.forEach(substituicao => {
       string = string.replace(substituicao.original, substituicao.subst)
     })
-    
+
     return string.trim();
   }else{
     console.log('O tipo do parâmetro passado não é uma string.');
@@ -65,7 +65,7 @@ function sanitizarString(string){
 
 const converterParaMesBRL = (numero) => {
   let mes = null;
-  
+
   switch (numero + 1){
     case 1: mes = 'janeiro'; break;
     case 2: mes = 'fevereiro'; break;
@@ -81,7 +81,7 @@ const converterParaMesBRL = (numero) => {
     case 12: mes = 'dezembro'; break;
     default: mes = 'janeiro'; break;
   }
-  
+
   return mes;
 }
 
@@ -101,48 +101,48 @@ function hexToRgbA(hex){
 
 function atribuirLinks(){
   const linkElementos = document.querySelectorAll('[data-link]');
-  
+
   linkElementos.forEach(link => {
     switch(link.dataset.link.toLowerCase().trim()){
       case 'my-profile':
       link.href = 'https://cursos.alura.com.br/user/devgabrielribeiro';
       break;
-      
+
       case 'profile-one':
       link.href = 'https://cursos.alura.com.br/emprega-one/profile/devgabrielribeiro';
       break;
-      
+
       case 'home-conversor':
       link.href = 'https://gabriersdev.github.io/home-page-Conversor/';
       break;
-      
+
       case 'music-ui':
       link.href = 'https://gabriersdev.github.io/music.ui/';
       break;
-      
+
       case 'confirmacao-cca':
       link.href = 'https://gabriersdev.github.io/cca/';
       break;
-      
+
       case 'birthday-message':
       link.href = 'https://gabriersdev.github.io/birthday-message/';
       break;
-      
+
       case 'github-dev':
       link.href = 'https://github.com/gabriersdev/';
       break;
-      
+
       case 'github-projeto':
       link.href = 'https://github.com/gabriersdev/my-courses-alura';
       break;
-      
+
       case 'portfolio':
       link.href = 'https://gabriersdev.github.io/portfolio/';
-      break;  
-      
+      break;
+
       case 'linkedin':
-      link.href = 'https://linkedin.com/in/gabrielribeirodev/';
-      break;  
+      link.href = 'https://linkedin.com/in/gabrielmpribeiro/';
+      break;
     }
 
     link.setAttribute('rel', 'noreferrer noopener');
