@@ -39,7 +39,8 @@ import { base_html } from "./modulos/conteudos.js";
     const requireAPI = (element_type) => {
       async function conexao(){
         try{
-          const url = `https://www.alura.com.br/api/dashboard/d217e36b4071d6c4d6e6e97c4ced902a48332f60a59705954cc11c570724ba78`;
+          const aluraKey = "1683a20bb74d4a4092800f71712514d313aca4ea3fa8b66473f3cc9e39db5037"
+          const url = `https://www.alura.com.br/api/dashboard/${aluraKey}`;
           return await fetch(url)
           .then((response) => 
           response.json()
